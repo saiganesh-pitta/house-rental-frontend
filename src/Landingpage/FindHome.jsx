@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import FindHomeBtns from "./FindHomebtns.jsx";
+import FindHomeBtns from "./FindHomebtns";
 import AllHomes from "../AllHomes/AllHomes";
 import Fav from "../AllHomes/Fav";
 import HomeDetails from "../Components/HomeDetailPage";
