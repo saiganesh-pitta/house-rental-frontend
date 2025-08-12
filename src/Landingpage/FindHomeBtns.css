@@ -1,0 +1,31 @@
+.findhomes-cont{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.allposts {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    width: 50vw;
+    box-sizing: border-box;
+    height: 33px;
+}
+
+.favorites {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    width: 50vw;
+    height: 33px;
+}
+.on{
+    border-bottom: 2px solid black;
+    color: #ffc400;
+    box-sizing: border-box;
+}
