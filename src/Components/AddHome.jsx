@@ -28,14 +28,11 @@ const AddHome = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (logData.isLoggedIn) {
-      await fetch(
-        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/",
-        {
-          method: "POST",
-          credentials: "include",
-          body: data,
-        }
-      ).then(navigate("/posthome/myhome"), setForm(""));
+      await fetch("https://backend-two-jet-82.vercel.app/", {
+        method: "POST",
+        credentials: "include",
+        body: data,
+      }).then(navigate("/posthome/myhome"), setForm(""));
     } else {
       navigate("/details/login");
     }

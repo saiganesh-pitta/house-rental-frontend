@@ -22,15 +22,12 @@ const SignUp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await fetch(
-        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/signup",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-          body: JSON.stringify({ ...signData }),
-        }
-      ).then(async (response) => {
+      await fetch("https://backend-two-jet-82.vercel.app/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ ...signData }),
+      }).then(async (response) => {
         const data = await response.json();
         if (data.errors) {
           // console.log('errors')

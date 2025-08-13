@@ -12,10 +12,9 @@ const AllHomes = () => {
 
   const getHomes = async () => {
     try {
-      const response = await fetch(
-        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/",
-        { credentials: "include" }
-      );
+      const response = await fetch("https://backend-two-jet-82.vercel.app/", {
+        credentials: "include",
+      });
       const data = await response.json();
       setallHomesData(data.reverse());
     } catch (error) {
@@ -31,15 +30,12 @@ const AllHomes = () => {
     e.stopPropagation();
     e.preventDefault();
     if (logData.isLoggedIn) {
-      await fetch(
-        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/fav",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          credentials: "include",
-          body: JSON.stringify({ id: items }),
-        }
-      ).then(navigate("/findhome/fav"));
+      await fetch("https://backend-two-jet-82.vercel.app/fav", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ id: items }),
+      }).then(navigate("/findhome/fav"));
     } else {
       navigate("/details/login");
     }
@@ -58,7 +54,7 @@ const AllHomes = () => {
               <div className="card-cont">
                 <img
                   className="card-img"
-                  src={`https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/${items.photo}`}
+                  src={`https://backend-two-jet-82.vercel.app/${items.photo}`}
                 />
                 <div className="card-details">
                   <div className="card-header">
