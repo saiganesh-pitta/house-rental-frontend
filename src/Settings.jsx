@@ -23,12 +23,15 @@ const Settings = () => {
     e.preventDefault();
     console.log("clicked");
     try {
-      await fetch("https://backend-two-jet-82.vercel.app/logout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify({ ...isLoggedOut }),
-      });
+      await fetch(
+        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/logout",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({ ...isLoggedOut }),
+        }
+      );
       navigate("/details/login");
       console.log(isLoggedOut);
     } catch (error) {
@@ -47,11 +50,14 @@ const Settings = () => {
 
     let c = confirm("Do you really want to delete your Account ?");
     if (c) {
-      await fetch("https://backend-two-jet-82.vercel.app/account", {
-        method: "DELETE",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-      }).then(navigate("/details/signup"));
+      await fetch(
+        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/account",
+        {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      ).then(navigate("/details/signup"));
     }
   };
 

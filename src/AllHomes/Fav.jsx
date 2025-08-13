@@ -12,7 +12,7 @@ const Fav = () => {
   const getFavHomes = async () => {
     try {
       const response = await fetch(
-        "https://backend-two-jet-82.vercel.app/fav",
+        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/fav",
         {
           credentials: "include",
         }
@@ -34,12 +34,15 @@ const Fav = () => {
     e.preventDefault();
     setFavHomesData(FavHomesData.filter((item) => item._id !== items));
     console.log(FavHomesData);
-    await fetch("https://backend-two-jet-82.vercel.app/fav/del", {
-      method: "DELETE",
-      headers: { "Content-Type": "application/json" },
-      credentials: "include",
-      body: JSON.stringify({ id: items }),
-    });
+    await fetch(
+      "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/fav/del",
+      {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({ id: items }),
+      }
+    );
   };
 
   return (
@@ -63,7 +66,7 @@ const Fav = () => {
               <div className="card-cont">
                 <img
                   className="card-img"
-                  src={`https://backend-two-jet-82.vercel.app/${items.photo}`}
+                  src={`https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/${items.photo}`}
                 />
                 <div className="card-details">
                   <div className="card-header">

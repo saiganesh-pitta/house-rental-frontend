@@ -19,7 +19,7 @@ const MyHomes = () => {
   const getHomes = async () => {
     try {
       const response = await fetch(
-        "https://backend-two-jet-82.vercel.app/myhomes",
+        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/myhomes",
         { credentials: "include" }
       );
       const data = await response.json();
@@ -41,7 +41,7 @@ const MyHomes = () => {
     setForm({ ...HomesData.filter((items) => items._id === items._id)[0] });
     setHomesData(HomesData.filter((item) => item._id !== items._id));
     navigate("/posthome/addhome");
-    //  await fetch(`https://backend-two-jet-82.vercel.app/update`, {method: "POST",headers:{"Content-Type": "application/json" }, body: JSON.stringify({...items}) })
+    //  await fetch(`https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/update`, {method: "POST",headers:{"Content-Type": "application/json" }, body: JSON.stringify({...items}) })
   };
 
   const handleDelete = async (id, e) => {
@@ -51,12 +51,15 @@ const MyHomes = () => {
     if (c) {
       console.log("clicked", id);
       setHomesData(HomesData.filter((item) => item._id !== id));
-      await fetch("https://backend-two-jet-82.vercel.app/", {
-        method: "DELETE",
-        headers: { "Content-Type": "application/json" },
-        credentials: "include",
-        body: JSON.stringify({ id: id }),
-      });
+      await fetch(
+        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/",
+        {
+          method: "DELETE",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+          body: JSON.stringify({ id: id }),
+        }
+      );
     }
   };
 
@@ -73,7 +76,7 @@ const MyHomes = () => {
               <div className="card-cont">
                 <img
                   className="card-img"
-                  src={`https://backend-two-jet-82.vercel.app/${items.photo}`}
+                  src={`https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/${items.photo}`}
                 />
                 <div className="card-details">
                   <div className="card-header">

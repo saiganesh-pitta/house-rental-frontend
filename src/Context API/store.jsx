@@ -36,7 +36,7 @@ const StatesProvider = ({ children }) => {
   const Log = async () => {
     try {
       const response = await fetch(
-        "https://backend-two-jet-82.vercel.app/auth",
+        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/auth",
         { credentials: "include" }
       );
       const data = await response.json();
