@@ -69,7 +69,7 @@ const HomeDetails = () => {
         </div>
 
         <img
-          src={`https://backend-two-jet-82.vercel.app/${home.photo}`}
+          src={`${home.photo}`}
           alt="House"
           className="details-photo"
         />
