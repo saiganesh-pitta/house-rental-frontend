@@ -2,7 +2,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import "../loginpage/loginCont.css";
 import { useState } from "react";
 import { CiLogin } from "react-icons/ci";
-import { States } from "../Context API/store";
+import { States } from "../Context API/store.jsx";
 import { useContext, useEffect } from "react";
 
 const Login = () => {

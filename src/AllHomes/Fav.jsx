@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 // import photo from "../compressed_image_20kb.jpg";
 import { FaStar } from "react-icons/fa";
 import { MdFavoriteBorder } from "react-icons/md";
-import { States } from "../Context API/store";
+import { States } from "../Context API/store.jsx";
 
 const Fav = () => {
   const { logData, Log, FavHomesData, setFavHomesData } = useContext(States);

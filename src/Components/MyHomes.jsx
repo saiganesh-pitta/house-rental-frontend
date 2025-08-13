@@ -4,7 +4,7 @@ import "./MyHomes.css";
 import { FaStar } from "react-icons/fa";
 import { CiEdit } from "react-icons/ci";
 import { MdDeleteOutline } from "react-icons/md";
-import { States } from "../Context API/store";
+import { States } from "../Context API/store.jsx";
 import { NavLink, useNavigate } from "react-router-dom";
 // import { useParams } from "react-router-dom";
 

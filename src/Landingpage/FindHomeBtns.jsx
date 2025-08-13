@@ -3,7 +3,7 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 import "./FindHomeBtns.css"
 import { useContext } from "react";
-import { States } from "../Context API/store";
+import { States } from "../Context API/store.jsx";
 
  const FindHomeBtns=()=>{
 

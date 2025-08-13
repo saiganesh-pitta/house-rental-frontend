@@ -1,7 +1,7 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import "../loginpage/loginCont.css"
-import Login from "./login";
-import SignUp from "./Signup";
+import Login from "./login.jsx";
+import SignUp from "./Signup.jsx";
 import { MdClose } from "react-icons/md";
 
 const LoginCont=()=>{

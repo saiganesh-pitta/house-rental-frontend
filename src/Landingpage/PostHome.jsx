@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import MyHomes from "../Components/myHomes";
-import AddHome from "../Components/AddHome";
-import Buttons from "../Components/Button";
-import HomeDetails from "../Components/HomeDetailPage";
+import MyHomes from "../Components/MyHomes.jsx";
+import AddHome from "../Components/AddHome.jsx";
+import Buttons from "../Components/Button.jsx";
+import HomeDetails from "../Components/HomeDetailPage.jsx";
 
 
 

@@ -1,13 +1,13 @@
 import "./App.css"
-import Navbar from "./Components/Nav";
+import Navbar from "./Components/Nav.jsx";
 import { Route, Routes } from "react-router-dom";
-import StatesProvider from "./Context API/store";
-import Landingpage from "./Landingpage/Landingpage";
-import FindHome from "./Landingpage/FindHome";
-import PostHome from "./Landingpage/PostHome";
-import Settings from "./Settings";
-import LoginCont from "./loginpage/loginCont";
-import { States } from "./Context API/store";
+import StatesProvider from "./Context API/store.jsx";
+import Landingpage from "./Landingpage/Landingpage.jsx";
+import FindHome from "./Landingpage/FindHome.jsx";
+import PostHome from "./Landingpage/PostHome.jsx";
+import Settings from "./Settings.jsx";
+import LoginCont from "./loginpage/loginCont.jsx";
+import { States } from "./Context API/store.jsx";
 import { useContext, useEffect } from "react";
   
         

@@ -1,7 +1,7 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Nav.css";
 // import photo2 from "../compressed_image_20kb.jpg"
-import { States } from "../Context API/store";
+import { States } from "../Context API/store.jsx";
 import { useContext } from "react";
 import { FiSettings } from "react-icons/fi"
 import { CiLogin } from "react-icons/ci";

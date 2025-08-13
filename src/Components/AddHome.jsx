@@ -2,7 +2,7 @@ import React from "react";
 import "./AddHome.css";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { States } from "../Context API/store";
+import { States } from "../Context API/store.jsx";
 
 const AddHome = () => {
   const { form, setForm, file, setFile, logData } = useContext(States);
