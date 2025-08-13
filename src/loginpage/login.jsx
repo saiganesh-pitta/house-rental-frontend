@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/login",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

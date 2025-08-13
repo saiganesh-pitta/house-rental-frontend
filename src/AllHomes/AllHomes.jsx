@@ -13,7 +13,7 @@ const AllHomes = () => {
   const getHomes = async () => {
     try {
       const response = await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/",
         { credentials: "include" }
       );
       const data = await response.json();
@@ -32,7 +32,7 @@ const AllHomes = () => {
     e.preventDefault();
     if (logData.isLoggedIn) {
       await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/fav",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/fav",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -58,7 +58,7 @@ const AllHomes = () => {
               <div className="card-cont">
                 <img
                   className="card-img"
-                  src={`https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/${items.photo}`}
+                  src={`https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/${items.photo}`}
                 />
                 <div className="card-details">
                   <div className="card-header">

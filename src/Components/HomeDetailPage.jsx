@@ -45,7 +45,7 @@ const HomeDetails = () => {
   const detailHome = async () => {
     try {
       const response = await fetch(
-        `https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/home/${id}`
+        `https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/home/${id}`
       );
       const data = await response.json();
       setHome(data);
@@ -69,7 +69,7 @@ const HomeDetails = () => {
         </div>
 
         <img
-          src={`https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/${home.photo}`}
+          src={`https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/${home.photo}`}
           alt="House"
           className="details-photo"
         />

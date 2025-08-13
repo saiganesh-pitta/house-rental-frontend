@@ -23,7 +23,7 @@ const SignUp = () => {
     e.preventDefault();
     try {
       await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/signup",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/signup",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

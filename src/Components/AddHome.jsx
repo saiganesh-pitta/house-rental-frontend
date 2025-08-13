@@ -29,7 +29,7 @@ const AddHome = () => {
     e.preventDefault();
     if (logData.isLoggedIn) {
       await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/",
         {
           method: "POST",
           credentials: "include",

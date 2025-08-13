@@ -24,7 +24,7 @@ const Settings = () => {
     console.log("clicked");
     try {
       await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/logout",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/logout",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -51,7 +51,7 @@ const Settings = () => {
     let c = confirm("Do you really want to delete your Account ?");
     if (c) {
       await fetch(
-        "https://backend-dugj7gik4-saiganeshs-projects-2806edd9.vercel.app/account",
+        "https://backend-git-main-saiganeshs-projects-2806edd9.vercel.app/account",
         {
           method: "DELETE",
           headers: { "Content-Type": "application/json" },
