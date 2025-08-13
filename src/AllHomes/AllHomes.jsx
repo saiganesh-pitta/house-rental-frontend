@@ -54,7 +54,7 @@ const AllHomes = () => {
               <div className="card-cont">
                 <img
                   className="card-img"
-                  src={`https://backend-two-jet-82.vercel.app/${items.photo}`}
+                  src={`${items.photo}`}
                 />
                 <div className="card-details">
                   <div className="card-header">
