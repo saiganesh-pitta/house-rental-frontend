@@ -8,7 +8,7 @@ import { States } from "../Context API/store";
 const AllHomes = () => {
   const navigate = useNavigate();
   const [allHomesData, setallHomesData] = useState([]);
-  const { logData, Log } = useContext(States);
+  const { logData, Log ,FavHomesData } = useContext(States);
 
   const getHomes = async () => {
     try {
@@ -35,7 +35,7 @@ const AllHomes = () => {
         headers: { "Content-Type": "application/json" },
         credentials: "include",
         body: JSON.stringify({ id: items }),
-      }).then(navigate("/findhome/fav"));
+      }).then(FavHomesData);
     } else {
       navigate("/details/login");
     }
