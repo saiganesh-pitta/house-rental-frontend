@@ -102,10 +102,9 @@ const Settings = () => {
           )}
         </div>
 
-           {logData.user && <div onClick={handleLogOut} className="acc-cont">
+        { logData.user ? <div onClick={handleLogOut} className="acc-cont">
                        <button className="acc-out">Log Out</button>
-               </div>}
-           { !logData.user && <div onClick={()=>{navigate("/details/login")}} className="acc-cont">
+               </div> : <div onClick={()=>{navigate("/details/login")}} className="acc-cont">
                        <button className="acc-out">Log Out</button>
                </div>}
       </div>
