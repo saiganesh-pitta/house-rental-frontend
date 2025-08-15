@@ -19,6 +19,8 @@ const Navbar = () => {
         <h1 className="bowlby-one-sc-regular" >Rent a House</h1>
       </div>
       </NavLink>
+  <div>    
+      <div>
       {logData.isLoggedIn ? <NavLink to="/" id="fnt" >       
           { logData.user && <div className="profile" >
             <p>{logData.user.fullName}</p> </div>} </NavLink> : <NavLink to="/details/login" id="fnt" >
@@ -26,10 +28,14 @@ const Navbar = () => {
            <p><CiLogin/> Sign in</p>    
       </div>
       </NavLink>}
+      </div>
+      <div className="profile" >
          <NavLink to="/settings" id="fnt" > 
                <FiSettings className="accicon" />
          </NavLink>
-    </div>  
+        </div>
+  </div>  
+</div>  
     </>
   );
 };
