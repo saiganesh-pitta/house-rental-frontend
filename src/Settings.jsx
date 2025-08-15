@@ -102,9 +102,12 @@ const Settings = () => {
           )}
         </div>
 
-        <div onClick={handleLogOut} className="acc-cont">
-          <button className="acc-out">Log Out</button>
-        </div>
+           {logData.user && <div onClick={handleLogOut} className="acc-cont">
+                       <button className="acc-out">Log Out</button>
+               </div>}
+           { !logData.user && <div onClick={navigate("/details/login")} className="acc-cont">
+                       <button className="acc-out">Log Out</button>
+               </div>}
       </div>
 
       <footer className="settings-footer">
